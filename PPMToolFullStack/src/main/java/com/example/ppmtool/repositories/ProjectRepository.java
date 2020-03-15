@@ -1,4 +1,4 @@
-package repositories;
+package com.example.ppmtool.repositories;
 
 import com.example.ppmtool.domain.Project;
 import org.springframework.data.repository.CrudRepository;
