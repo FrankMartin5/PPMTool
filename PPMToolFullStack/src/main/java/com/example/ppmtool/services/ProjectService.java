@@ -37,11 +37,9 @@ public class ProjectService {
 
     public void deleteProjectByIdentifier(String projectid){
         Project project = projectRepository.findByProjectIdentifier(projectid.toUpperCase());
-
         if (project == null){
             throw new ProjectIdException("Cannot Project with ID '" +projectid+"'. This project does not exit.");
         }
-
         projectRepository.delete(project);
     }
 }
